@@ -70,13 +70,13 @@ function App() {
 
   return (
     <div className=" bg-[#F2EEE5] text-[#242424]">
-      <header className="text-center py-2 bg-[#242424] text-[#F2EEE5] rounded-b-3xl">
+      <header className="text-center py-2 bg-[#242424] text-[#F2EEE5] rounded-b-3xl select-none">
         <h1 className="text-4xl md:text-6xl font-[900] Bowlby-One">Resume Builder</h1>
         <p className="text-sm font-thin mt-2">Craft your resume with ease and download it as PDF</p>
       </header>
       <div className="flex flex-col md:flex-row justify-center gap-6 p-6">
         {/* Form for user input */}
-        <div className="md:w-full p-6  bg-[#F2EEE5] rounded-3xl border-8 border-[#242424]">
+        <div className="md:w-full p-6  bg-[#F2EEE5] rounded-3xl border-8 border-[#242424] select-none">
           <h2 className="text-3xl text-[#242424] mb-6 font-extrabold teko">Enter Your Details:</h2>
           
        <div className="grid grid-cols-2">
@@ -210,12 +210,12 @@ function App() {
         {/* Live resume preview */}
         <div className="md:w-full">
           <div className="h-full p-6 bg-[#242424] rounded-3xl">
-            <h2 className="text-3xl font-extrabold teko text-[#F2EEE5] mb-6">Live Resume Preview:</h2>
+            <h2 className="text-3xl font-extrabold teko text-[#F2EEE5] mb-6 select-none">Live Resume Preview:</h2>
             <ResumePreview formData={formData} />
           </div>
         </div>
       </div>
-      <div className="p-6 pb-10">
+      <div className="p-6 pb-10 select-none">
             <PDFGenerator formData={formData} />
           </div>
     </div>

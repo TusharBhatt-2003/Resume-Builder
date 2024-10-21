@@ -15,3 +15,8 @@
   html, body {
     background-color: #fffefb;
   }
+
+::selection {
+    background-color: #242424d9;
+    color: #F2EEE5;
+}
