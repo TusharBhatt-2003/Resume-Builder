@@ -2,6 +2,7 @@ import { useState } from "react";
 import ResumePreview from "./components/ResumePreview";
 import FormSection from "./components/FormSection";
 import PDFGenerator from "./components/PDFGenerator";
+import Footer from "./components/Footer";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -218,6 +219,7 @@ function App() {
       <div className="p-6 pb-10 select-none">
             <PDFGenerator formData={formData} />
           </div>
+          <Footer />
     </div>
   );
 }
